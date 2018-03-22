@@ -110,7 +110,7 @@ class RedeemViewController: UIViewController {
         beerMenuBtn.setTitleColor(.white, for: .normal)
         myBeerChipsBtn.setTitleColor(.white, for: .normal)
         
-        let beerchipStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let beerchipStoryboard = UIStoryboard(name: "AppleBeeStoryboard", bundle: Bundle(for: AppleBeeViewController.self))
         beerchipTableVC =  beerchipStoryboard.instantiateViewController(withIdentifier: "BeerChipTableViewController") as! BeerChipTableViewController
         cashOutVC =  beerchipStoryboard.instantiateViewController(withIdentifier: "CashOutViewController") as! CashOutViewController
         redeemBeerchipVC =  beerchipStoryboard.instantiateViewController(withIdentifier: "RedeemBeerchipViewController") as! RedeemBeerchipViewController
