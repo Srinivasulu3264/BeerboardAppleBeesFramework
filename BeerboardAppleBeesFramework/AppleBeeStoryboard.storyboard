@@ -288,6 +288,9 @@
                     <navigationItem key="navigationItem" id="LA1-Pd-ZdM">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="RS5-gW-EVV">
                             <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="slideoutmenuAction:" destination="KxP-fh-xpo" id="Jpj-lH-taC"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
