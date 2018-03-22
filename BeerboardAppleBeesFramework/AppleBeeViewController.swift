@@ -109,9 +109,6 @@ public class AppleBeeViewController: UIViewController {
             destinationVC.redeemVCDelegate = self
         }
     }
-    
-    
-    
 }
 
 extension AppleBeeViewController:redeemVCProtocol

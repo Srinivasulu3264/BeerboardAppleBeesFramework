@@ -258,6 +258,10 @@
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="KxP-fh-xpo" id="Kfy-MH-tRB"/>
+                                            <outlet property="delegate" destination="KxP-fh-xpo" id="dFm-i5-U8U"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
