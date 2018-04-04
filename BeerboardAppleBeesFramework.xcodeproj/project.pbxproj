@@ -12,8 +12,6 @@
 		8685F962206374FE00A6176B /* BeerboardAppleBeesFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8685F954206374FD00A6176B /* BeerboardAppleBeesFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8685F96F206375B400A6176B /* AppleBeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685F96B206375B300A6176B /* AppleBeeViewController.swift */; };
 		8685F971206375B400A6176B /* AppleBeeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685F96D206375B300A6176B /* AppleBeeStoryboard.storyboard */; };
-		8685F9752063783C00A6176B /* SlideoutmenuListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685F9732063783B00A6176B /* SlideoutmenuListTableViewCell.swift */; };
-		8685F9762063783C00A6176B /* SlideoutMenuprofileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685F9742063783C00A6176B /* SlideoutMenuprofileTableViewCell.swift */; };
 		8685F9802063787100A6176B /* BeerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685F9772063787000A6176B /* BeerInfoViewController.swift */; };
 		8685F9812063787100A6176B /* BeerchipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685F9782063787000A6176B /* BeerchipTableViewCell.swift */; };
 		8685F9822063787100A6176B /* BeerChipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685F9792063787000A6176B /* BeerChipTableViewController.swift */; };
@@ -45,8 +43,6 @@
 		8685F961206374FE00A6176B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8685F96B206375B300A6176B /* AppleBeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleBeeViewController.swift; sourceTree = "<group>"; };
 		8685F96D206375B300A6176B /* AppleBeeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppleBeeStoryboard.storyboard; sourceTree = "<group>"; };
-		8685F9732063783B00A6176B /* SlideoutmenuListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideoutmenuListTableViewCell.swift; sourceTree = "<group>"; };
-		8685F9742063783C00A6176B /* SlideoutMenuprofileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideoutMenuprofileTableViewCell.swift; sourceTree = "<group>"; };
 		8685F9772063787000A6176B /* BeerInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerInfoViewController.swift; sourceTree = "<group>"; };
 		8685F9782063787000A6176B /* BeerchipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchipTableViewCell.swift; sourceTree = "<group>"; };
 		8685F9792063787000A6176B /* BeerChipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerChipTableViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 			children = (
 				8685F954206374FD00A6176B /* BeerboardAppleBeesFramework.h */,
 				8685F96B206375B300A6176B /* AppleBeeViewController.swift */,
-				8685F9732063783B00A6176B /* SlideoutmenuListTableViewCell.swift */,
-				8685F9742063783C00A6176B /* SlideoutMenuprofileTableViewCell.swift */,
 				8685F9782063787000A6176B /* BeerchipTableViewCell.swift */,
 				8685F9792063787000A6176B /* BeerChipTableViewController.swift */,
 				8685F9772063787000A6176B /* BeerInfoViewController.swift */,
@@ -244,13 +238,11 @@
 				8685F9802063787100A6176B /* BeerInfoViewController.swift in Sources */,
 				8685F9832063787100A6176B /* LocationTableViewCell.swift in Sources */,
 				8685F9812063787100A6176B /* BeerchipTableViewCell.swift in Sources */,
-				8685F9762063783C00A6176B /* SlideoutMenuprofileTableViewCell.swift in Sources */,
 				8685F9842063787100A6176B /* CashOutViewController.swift in Sources */,
 				8685F9852063787100A6176B /* RedeemBeerchipViewController.swift in Sources */,
 				8685F9822063787100A6176B /* BeerChipTableViewController.swift in Sources */,
 				8685F9872063787100A6176B /* RedeemViewBeerchipTableTitleTableViewCell.swift in Sources */,
 				8685F96F206375B400A6176B /* AppleBeeViewController.swift in Sources */,
-				8685F9752063783C00A6176B /* SlideoutmenuListTableViewCell.swift in Sources */,
 				8685F9882063787100A6176B /* RedeemViewController.swift in Sources */,
 				8685F9862063787100A6176B /* RedeemviewBeerchipTableSubTitlesTableViewCell.swift in Sources */,
 			);

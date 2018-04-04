@@ -8,15 +8,8 @@
 
 import UIKit
 
-
-protocol redeemVCProtocol {
-    func callSliderMenu()
-}
-
-class RedeemViewController: UIViewController {
+ public class RedeemViewController: UIViewController {
     
-    var redeemVCDelegate: redeemVCProtocol?
-    var navigationBarLabel:UILabel?
 
     @IBOutlet weak var redeemButtomConatinerView: UIView!
     
@@ -78,12 +71,14 @@ class RedeemViewController: UIViewController {
     var isRedeemBeerchipLocation = false
     var usedefaults = UserDefaults.standard
     
+     var navigationBarLabel:UILabel?
+    
     @IBOutlet weak var beerMenuView: UIView!
     
     @IBOutlet weak var myBeerchipsView: UIView!
     
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -136,12 +131,9 @@ class RedeemViewController: UIViewController {
         
         let index = NSIndexPath(row: 6, section: 0)
         self.locationTableView.selectRow(at: index as IndexPath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
-        
-    
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         var userdefaultsLocation = UserDefaults.standard.string(forKey: "location")
@@ -157,7 +149,7 @@ class RedeemViewController: UIViewController {
         navigationBarLabel?.textColor = .white
         self.navigationController?.navigationBar.addSubview(navigationBarLabel!)
     }
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         navigationBarLabel?.removeFromSuperview()
@@ -166,8 +158,10 @@ class RedeemViewController: UIViewController {
     @objc func menuAction ()  {
         
         self.navigationController?.popViewController(animated: true)
-        redeemVCDelegate?.callSliderMenu()
-        print("method called")
+        
+        let notificationName = Notification.Name("NotificationIdentifier")
+        NotificationCenter.default.post(name: notificationName, object: nil)
+
     }
     
     
@@ -435,7 +429,7 @@ extension RedeemViewController:redeemBeerchipVCProtocol{
 
 
 extension RedeemViewController:UITableViewDelegate,UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == beerchipTableview {
             return  titleArr.count+1
         }else{
@@ -443,7 +437,7 @@ extension RedeemViewController:UITableViewDelegate,UITableViewDataSource{
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if tableView == beerchipTableview {
             if indexPath.row == 0 {
@@ -476,24 +470,11 @@ extension RedeemViewController:UITableViewDelegate,UITableViewDataSource{
             backgroundView.backgroundColor = UIColor.init(red: 172.0/255.0, green: 26.0/255.0, blue: 46.0/255.0, alpha: 1.0)
             cell.selectedBackgroundView = backgroundView
            
-            
-            /*
-            if cell.isSelected {
-                cell.locationNameLbl.textColor = .white
-                cell.locationAddessLbl.textColor = .white
-            } else {
-                // change color back to whatever it was
-                cell.locationNameLbl.textColor = .black
-                cell.locationAddessLbl.textColor = .black
-            }
- */
-            
-            
             return cell
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if tableView == beerchipTableview {
             isBeerinfoVCAdding = true
